@@ -1,0 +1,23 @@
+.buttons {
+  display: flex;
+}
+
+button {
+  margin: 1em;
+  width: 6em;
+  height: 6em;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+/* #red {
+  background: #FF0000;
+}
+
+#green {
+  background: #00FF00;
+}
+
+#blue {
+  background: #0000FF;
+} */

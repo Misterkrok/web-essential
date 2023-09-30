@@ -1,0 +1,18 @@
+img{
+    width: 250px;
+    height: 250px;
+}
+
+img.left{
+    float: left;
+    padding-right: 20px;
+}
+
+img.right {
+    float: right;
+    padding-left: 20px;
+}
+h2{
+    clear: both;
+}
+/*clear:both;*/ 

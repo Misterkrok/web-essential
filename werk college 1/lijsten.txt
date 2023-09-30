@@ -1,0 +1,26 @@
+Lijstjes in HTML
+Een ongeordende lijst met snacks
+pizza
+hawai
+met banaan
+zonder banaan
+bolognaise
+4 kazen
+croque monsieur
+kebab
+durum
+Een geordende lijst met voetbalploegen
+Eupen
+Antwerp
+Union
+Club Brugge
+Genk
+Een 'description list'
+Dit soort lijst kan je gebruiken voor items (dt) met telkens nog een bijhorend stuk in info (dd)
+
+HTML
+Dat staat voor HyperTekst Markup Language. De bouwstenen van het internet.
+CSS
+Cascading Style Sheets worden gebruikt om HTML-documenten te stijlen. Kleuren Achtergronden en nog veel meer.
+Javascript
+JavaScript is een veelgebruikte scripttaal om webpagina's interactief te maken en webapplicaties te ontwikkelen. Het script wordt middels HTML overgebracht in de webbrowser en wordt hierin uitgevoerd.

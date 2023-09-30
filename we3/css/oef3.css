@@ -1,0 +1,19 @@
+figure{
+    width: 400px ;
+    padding: 1px ;
+    border: 5px solid white;
+    background-color: white;
+    box-shadow:0 10px 14px rgba(0,0,0,0.6);
+    margin: 3rem auto 3rem auto ;
+    border-radius: 2%;
+}
+figcaption{
+    text-align: center;
+    color: royalblue;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 200%;
+}
+img{
+    border-radius: 50%;
+}

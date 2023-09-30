@@ -1,0 +1,24 @@
+h1{
+    color: gray;
+}
+td{
+background-color: rgb(80, 121, 161);
+text-align: center;
+border: 1px solid gray;
+color: white;
+padding: 15px;
+}
+th{
+    text-align: center;
+    border: 1px solid gray;
+    padding: 15px;
+}
+table{
+border-collapse: collapse;
+
+}
+caption{
+    caption-side: bottom;
+    color: gray;
+    padding: 15px;
+}

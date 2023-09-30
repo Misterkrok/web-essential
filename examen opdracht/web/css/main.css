@@ -1,0 +1,185 @@
+@font-face {
+  font-family: 'PallMallBold';
+  src: url('../fonts/PallMallBold.woff') format('woff'),
+    url('../fonts/PallMallBold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 
+##### Typografie #####
+
+Gewone tekst
+  Tekstgrootte: standaard
+  Lettertype: Arial
+Lijnhoogte paragrafen: 1,5 keer zo groot als de tekst zelf
+
+Titels: 
+PallMallBold -> gebruik hiervoor de embedded font (zie hierboven) en in de fonts-folder.
+
+##### Kleuren #####
+
+  white: #fcfcef; 
+  (achtergrond van inhoud, tekstkleur in navigatie-links en footer)
+  blue: #70708e; 
+  (laatste regel in filmovericht en namen van personages)
+  dark: #473336; 
+  (achtergond navigatielinks, footer)
+  orange: #d17038;
+  (achtergrondkleur voor actieve en hover link)
+
+##### Layout #####
+- algemeen
+  mobiele layout. 
+  (2examen-small-screen2.jpg, 3examen-small-screen.jpg)
+
+  Voor grote schermen met min-width van 1024 pixels wordt de 'desktop'-layout gebruikt.
+  Werk hiervoor met een Media Query 
+
+  De witruimte paddings en margins mag je zelf inschatten. Op de meeste plaatsen is hiervoor 2 x de standaard textgrootte gebruikt
+
+- navigatie
+    De 'active' link bij 'films' en links waar je met de muis over gaat krijgen een oranje achtergrond.
+    Op grote schermen komen de links naast elkaar en gecentreerd.
+    Tip: zet de achtergrondkleuren op de links. Niet op de lijst-items
+
+- header met achtergrondafbeelding & titel
+    De hoogte voor grote schermen van dit blok is '60vh'.
+
+- Filmoverzicht
+    Het logo komt naast de tekst op grote schermen. Dit doe je beter NIET met float.
+    De laatste lijn (likes) komt in blauw. 
+    (Hier komt nadien in javascript nog een button achter.)
+
+- Personages
+    Op grote schermen komt dit in 3 kolommen. Er zit in totaal 20 pixels tussen de kolommen.
+    
+- In de pers
+    Titel met tekst.
+
+- voettekst
+    2 paragrafen.
+    Let op de achtergrond en tekstkleur.
+    
+EXCELLEREN OF EXTRA PUNTEN (5examen-large-extra_excelleren.jpg): 
+    De maximum-breedte van de gehele inhoud zet je op 1500 pixels. 
+    Zet daarvoor een container-div rond alle inhoud uitgezonder de footer.
+    Op schermen groter dan 1500 pixels wordt de inhoud dan gecentreerd.
+*/
+*{
+  box-sizing: border-box;
+}
+p{
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1.5em;
+  line-height: 1.5em;
+}
+img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+  
+}
+.person-block{
+  border: 15px solid white;
+}
+body{
+  align-items: center;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+h1{
+  font-family:PallMallBold;
+}
+h2{
+  font-family:PallMallBold;
+  font-size: 2em;
+  letter-spacing: 5px;
+  font-weight: bold;
+  text-align: left;
+
+}
+.main-nav{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-link{
+ list-style: none;
+ flex-direction: column;
+ 
+}
+.nav-link a{
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  
+}
+li{
+  background-color: #473336;
+  border: 5px solid white;
+  padding: 10px;
+}
+li:hover{
+  background-color: #d17038;
+}
+li.active{
+  background-color:#d17038;
+}
+.nav-link a.active{
+background-color:#d17038;
+}
+.info-block{
+  padding-left: 1em;
+}
+
+.info-mens{
+  color: #70708e;
+}
+header img{
+ background: fixed;
+}
+.person-titel{
+  text-align: center;
+  background-color:#70708e ;
+  margin-bottom: 0;
+}
+.person-titel img{
+  border: 5px solid white;
+}
+.review-block{
+  padding: 1em;
+}
+.review-text{
+  text-align: left;
+}
+.revieuw-author{
+  text-align: right;
+}
+.page-footer{
+  background-color: #473336;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  border-bottom: none;
+}
+@media screen and ( min-width: 1024px) {
+
+  .main-nav{
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+  }
+  .info-block{
+    display: flex;
+    flex-direction: row;
+  }
+  .person-block{
+    max-width: 33%;
+    float: left;
+  }
+  .header img{
+    float: right;
+  }
+}

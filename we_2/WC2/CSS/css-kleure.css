@@ -1,0 +1,55 @@
+body{
+    line-height: 1.5;
+    background-color: red;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    color: lightgray;
+}
+
+.navigatie a {
+    color: black;
+    background: red;
+    background-color: rgba(0,0,0,0.4);
+    text-decoration: none;
+}
+ a:hover{
+    text-decoration: underline;
+}
+.navigatie a:active{
+    color: lightgray;
+    background-color: rgba(0,0,0,0.4);
+}
+.current a {
+    background-color: rgba(0,0,0,0.4);
+    color: lightgray;
+}
+
+.highlight{
+    background-color: lime;
+}
+.quote-block{
+    background-color: white;
+    color: red;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.h2{
+    background-color: black;
+    color: yellow;
+}
+h1 ,h2 {
+    text-transform: uppercase;
+}
+h2 {
+    font-weight: normal;
+}
+h1 {
+    font-size: 300%;
+}
+.links a{
+text-decoration: none;
+
+}
+.titel a:hover{
+    text-decoration: underline;
+}

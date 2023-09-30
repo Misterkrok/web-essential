@@ -1,0 +1,33 @@
+body{
+    background-color: #E4EFEA;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: #F24949;
+    text-align: center;
+   
+}
+h2{
+    color:#F24949;
+    text-align: center;
+}
+h2+p{
+    font-weight: bolder;
+}
+div{
+    background-color: white;
+}
+h3{
+    color: salmon;
+    text-align: center;
+}
+h3+p{
+    text-align: right;
+}
+p.yes::first-letter{
+    font-size: 200%;
+    font-weight: bolder;
+}
+q{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

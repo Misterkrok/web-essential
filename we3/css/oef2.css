@@ -1,0 +1,28 @@
+body{
+    background-color: black;
+    color: white;
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+.boxes{
+    background-image:url(/images/bg.svg);
+    background-size: cover;
+    padding: 1px;
+}
+
+blockquote{
+    background: linear-gradient( red yellow);
+    width: 50%;
+    border: 5px solid white;
+    padding: 2rem;
+    margin: 3rem 
+}
+blockquote.two{
+    margin: 3rem auto 3rem auto;
+}
+blockquote.three{
+  /*  margin: 3rem 3rem 3rem auto;*/
+margin-left: auto;
+}

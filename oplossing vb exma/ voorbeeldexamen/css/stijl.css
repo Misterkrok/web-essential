@@ -1,0 +1,125 @@
+/*
+KLEUREN: 
+grijs : #aaaaaa   ->kleur van navigatielinks
+rood  : #f0141e
+
+wit   : #ffffff ->kleur van navigatielink met muisover
+zwart : #000000
+
+
+/* TYPOGRAFIE
+lettertype : Arial
+basisgrootte: 15 pixels
+*/
+
+/* BASIS CSS HIER (body, paragrafen, titels, ...) */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* HEADER & NAVIGATIE */
+header {
+  background-color: black;
+}
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nav-links {
+  margin: 3rem 0 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.nav-links a {
+  padding: 1em;
+  display: block;
+  color: #aaaaaa;
+}
+
+.nav-links a:hover {
+  background-color: #f0141e;
+}
+
+.nav-links a.active {
+  color: #f0141e;
+}
+
+/* INHOUD: FILMS */
+
+.movie-block {
+  display: block;
+  color: #000000;
+  text-decoration: none;
+}
+
+.movie-block:hover {
+  background-color: #f0141e;
+}
+
+.movie-block.first {
+  border: 10px solid red;
+}
+
+.movie-content {
+  padding: 1em 2em 1em 2em;
+}
+
+.page-footer {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 1rem;
+  text-align: center;
+  line-height: 2em;
+}
+
+/* ################################## */
+/* Mediaquery voor schermen vanaf 1024 pixels*/
+/* ################################## */
+
+@media screen and (min-width: 1024px) {
+  .page-header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+  }
+
+  body {
+    padding-top: 5rem;
+  }
+
+  .main-nav {
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .nav-links {
+    margin-top: 0;
+  }
+
+  .nav-links a {
+    padding: 2em;
+  }
+
+  .row {
+    display: flex;
+  }
+  .hidden {
+    display: none;
+  }
+}
